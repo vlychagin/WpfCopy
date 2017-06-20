@@ -16,7 +16,7 @@ using System.Windows.Shapes;
 namespace WpfLingToSql
 {
     /// <summary>
-    /// главное окно приложения
+    /// Логика взаимодействия для MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
