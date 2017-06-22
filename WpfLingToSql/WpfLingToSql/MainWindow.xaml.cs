@@ -42,7 +42,7 @@ namespace WpfLingToSql
         private void Update_Click(object sender, RoutedEventArgs e)
         {
             try {
-                // действия по обновлению таблицу
+                // действия по обновлению таблицы
                 _db.SubmitChanges();
 
                 // действия по обновлению привязки
@@ -62,9 +62,8 @@ namespace WpfLingToSql
                 // Если выбранных строк нет - выход
                 if (WheathersGrid.SelectedItems.Count == 0) return;
 
-                // Для каждой выбранной строки сетки отображения данных
-                // удалить из копии таблицы (т.е. из коллекции в  контексте 
-                // т.е. в объекте класса WheatherReportLVDataContext
+                // Для каждой выбранной строки сетки отображения данных удалить из копии таблицы 
+                // (т.е. из коллекции в  контексте - в объекте класса WheatherReportLVDataContext)
                 foreach (object t in WheathersGrid.SelectedItems) {
                     Wheathers w = t as Wheathers;
                     if (w != null) _db.Wheathers.DeleteOnSubmit(w);
