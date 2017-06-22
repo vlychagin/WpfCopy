@@ -43,7 +43,8 @@
                                          SelectedValueBinding ="{Binding IdPrecipitation}"
                                          SelectedValuePath="Id"                 
                                          DisplayMemberPath="Name" 
-                                         Header="Осадки" Width="100"/>
+                                         Header="Осадки" 
+                                         Width="80"/>
             </DataGrid.Columns>
         </DataGrid>
         
